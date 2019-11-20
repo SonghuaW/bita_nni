@@ -1,0 +1,1 @@
+mkdir -p /home/nni && nnictl create --config /userhome/mnist/config.yml && python3 /userhome/mnist/main.py && nnictl stop && cp -r /home/nni /userhome/nni
