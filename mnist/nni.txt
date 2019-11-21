@@ -1,2 +1,2 @@
-debug:service ssh stop; mkdir -p /output/nni && nnictl create --config /code/mnist/config.yml --port 22 && python3 /code/mnist/main.py && cat
+debug:service ssh stop; mkdir -p /output/nni && nnictl create --config /code/mnist/config.yml --port 22 && cat
 not_debug:mkdir -p /output/nni && nnictl create --config /code/mnist/config.yml --port 22 && python3 /code/mnist/main.py && nnictl stop
